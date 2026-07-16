@@ -1,0 +1,2439 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='WCPlayersData (InternLab)' inline='true' name='federated.19jufo710k7y0q1dkwzcj027c22e' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='BIDEVSRV\BIDEVSRV' name='sqlserver.13zekqs1d0mb04176wqrz0kui21p'>
+            <connection application-intent='false' authentication='sspi' class='sqlserver' dbname='InternLab' multi-subnet-failover='false' odbc-native-protocol='yes' one-time-sql='' server='BIDEVSRV\BIDEVSRV' />
+          </named-connection>
+        </named-connections>
+        <relation connection='sqlserver.13zekqs1d0mb04176wqrz0kui21p' name='WCPlayersData' table='[dbo].[WCPlayersData]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Key</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[Key]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>Key</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_SMALLINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SSHORT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[player]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>player</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[team]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>team</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team_country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[team_country]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>team_country</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>position</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[position]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>position</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>birth_year</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[birth_year]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>birth_year</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_SMALLINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SSHORT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>club</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[club]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>club</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>games</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[games]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>games</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>games_starts</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[games_starts]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>games_starts</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minutes</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[minutes]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>minutes</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_SMALLINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SSHORT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minutes_90s</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[minutes_90s]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>minutes_90s</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>goals</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[goals]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>goals</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>assists</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[assists]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>assists</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>goals_assists</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[goals_assists]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>goals_assists</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>goals_pens</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[goals_pens]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>goals_pens</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pens_made</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[pens_made]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>pens_made</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_BIT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pens_att</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[pens_att]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>pens_att</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cards_yellow</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[cards_yellow]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>cards_yellow</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cards_red</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[cards_red]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>cards_red</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_BIT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>goals_per90</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[goals_per90]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>goals_per90</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>assists_per90</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[assists_per90]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>assists_per90</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>goals_assists_per90</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[goals_assists_per90]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>goals_assists_per90</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>goals_pens_per90</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[goals_pens_per90]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>goals_pens_per90</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>goals_assists_pens_per90</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[goals_assists_pens_per90]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>goals_assists_pens_per90</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shots</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[shots]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>shots</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shots_on_target</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[shots_on_target]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>shots_on_target</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shots_on_target_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[shots_on_target_pct]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>shots_on_target_pct</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shots_per90</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[shots_per90]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>shots_per90</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shots_on_target_per90</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[shots_on_target_per90]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>shots_on_target_per90</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>goals_per_shot</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[goals_per_shot]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>goals_per_shot</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>goals_per_shot_on_target</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[goals_per_shot_on_target]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>goals_per_shot_on_target</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minutes_per_game</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[minutes_per_game]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>minutes_per_game</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minutes_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[minutes_pct]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>minutes_pct</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minutes_per_start</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[minutes_per_start]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>minutes_per_start</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>games_complete</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[games_complete]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>games_complete</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>games_subs</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[games_subs]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>games_subs</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minutes_per_sub</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[minutes_per_sub]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>minutes_per_sub</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unused_subs</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[unused_subs]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>unused_subs</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>points_per_game</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[points_per_game]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>points_per_game</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>on_goals_for</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[on_goals_for]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>on_goals_for</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>on_goals_against</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[on_goals_against]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>on_goals_against</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>plus_minus</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[plus_minus]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>plus_minus</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_SMALLINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SSHORT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>plus_minus_per90</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[plus_minus_per90]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>plus_minus_per90</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>plus_minus_wowy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[plus_minus_wowy]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>plus_minus_wowy</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cards_yellow_red</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[cards_yellow_red]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>cards_yellow_red</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fouls</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[fouls]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>fouls</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fouled</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[fouled]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>fouled</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offsides</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[offsides]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>offsides</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crosses</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[crosses]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>crosses</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>interceptions</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[interceptions]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>interceptions</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tackles_won</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[tackles_won]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>tackles_won</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pens_won</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[pens_won]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>pens_won</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>1</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pens_conceded</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[pens_conceded]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>pens_conceded</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>1</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>own_goals</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[own_goals]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>own_goals</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_BIT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gk_games</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[gk_games]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>gk_games</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gk_games_starts</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[gk_games_starts]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>gk_games_starts</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gk_minutes</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[gk_minutes]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>gk_minutes</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_SMALLINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SSHORT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gk_goals_against</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[gk_goals_against]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>gk_goals_against</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gk_goals_against_per90</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gk_goals_against_per90]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>gk_goals_against_per90</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gk_shots_on_target_against</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[gk_shots_on_target_against]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>gk_shots_on_target_against</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gk_saves</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[gk_saves]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>gk_saves</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gk_save_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gk_save_pct]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>gk_save_pct</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gk_wins</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[gk_wins]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>gk_wins</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gk_ties</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[gk_ties]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>gk_ties</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gk_losses</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[gk_losses]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>gk_losses</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gk_clean_sheets</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[gk_clean_sheets]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>gk_clean_sheets</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gk_clean_sheets_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gk_clean_sheets_pct]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>gk_clean_sheets_pct</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gk_pens_att</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[gk_pens_att]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>gk_pens_att</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gk_pens_allowed</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[gk_pens_allowed]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>gk_pens_allowed</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gk_pens_saved</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[gk_pens_saved]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>gk_pens_saved</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gk_pens_missed</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[gk_pens_missed]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>gk_pens_missed</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_BIT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gk_pens_save_pct</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[gk_pens_save_pct]</local-name>
+            <parent-name>[WCPlayersData]</parent-name>
+            <remote-alias>gk_pens_save_pct</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Goals-Pens' datatype='integer' hidden='true' name='[Calculation_1105582551056388]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[goals] - [goals_pens]' />
+      </column>
+      <column caption='ShotsOT' datatype='integer' hidden='true' name='[Calculation_1105582551240709]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[shots_on_target] - [shots]' />
+      </column>
+      <column caption='Tackles+Interception' datatype='integer' name='[Calculation_1105582565613574]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[tackles_won]+[interceptions]' />
+      </column>
+      <column caption='FW Rating' datatype='real' name='[Calculation_1612182795481092]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='0.40 * [goals_per90]&#13;&#10;+&#13;&#10;0.30 * [assists_per90]&#13;&#10;+&#13;&#10;0.20 * [shots_on_target_pct]&#13;&#10;+&#13;&#10;0.10 * [plus_minus]' />
+      </column>
+      <column caption='Goals Score' datatype='real' name='[Calculation_1612182797971461]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[goals_per90] * 40' />
+      </column>
+      <column caption='Assists Score' datatype='real' name='[Calculation_1612182798061574]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[assists_per90] * 30' />
+      </column>
+      <column caption='Accuracy Score' datatype='real' name='[Calculation_1612182798147591]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='([shots_on_target_pct] / 100) * 20' />
+      </column>
+      <column caption='TeamEffect Score' datatype='real' name='[Calculation_1612182798221320]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[plus_minus_per90] * 10' />
+      </column>
+      <column caption='FW Score' datatype='real' name='[Calculation_1612182798319625]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_1612182797971461]&#13;&#10;+&#13;&#10;[Calculation_1612182798061574]&#13;&#10;+&#13;&#10;[Calculation_1612182798147591]&#13;&#10;+&#13;&#10;[Calculation_1612182798221320]' />
+      </column>
+      <column caption='PositionSplit' datatype='string' name='[Calculation_1769962086752257]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF CONTAINS([position], &quot;,&quot;) THEN&#13;&#10;    SPLIT([position], &quot;,&quot;, 1)&#13;&#10;ELSE&#13;&#10;    [position]&#13;&#10;END' />
+      </column>
+      <column datatype='integer' hidden='true' name='[Key]' role='dimension' type='ordinal' />
+      <column caption='WCPlayersData' datatype='table' hidden='true' name='[__tableau_internal_object_id__].[WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='string' hidden='true' name='[age]' role='dimension' type='nominal' />
+      <column caption='Assists' datatype='integer' hidden='true' name='[assists]' role='measure' type='quantitative' />
+      <column caption='Assists Per90' datatype='real' name='[assists_per90]' role='measure' type='quantitative' />
+      <column caption='Birth Year' datatype='integer' hidden='true' name='[birth_year]' role='dimension' type='quantitative' />
+      <column caption='Cards Red' datatype='boolean' hidden='true' name='[cards_red]' role='dimension' type='nominal' />
+      <column caption='Cards Yellow' datatype='integer' hidden='true' name='[cards_yellow]' role='measure' type='quantitative' />
+      <column caption='Cards Yellow Red' datatype='integer' hidden='true' name='[cards_yellow_red]' role='measure' type='quantitative' />
+      <column caption='Club' datatype='string' hidden='true' name='[club]' role='dimension' type='nominal' />
+      <column caption='Crosses' datatype='integer' hidden='true' name='[crosses]' role='measure' type='quantitative' />
+      <column caption='Fouled' datatype='integer' hidden='true' name='[fouled]' role='measure' type='quantitative' />
+      <column caption='Fouls' datatype='integer' hidden='true' name='[fouls]' role='measure' type='quantitative' />
+      <column caption='Games' datatype='integer' name='[games]' role='measure' type='quantitative' />
+      <column caption='Games Complete' datatype='integer' name='[games_complete]' role='measure' type='quantitative' />
+      <column caption='Games Starts' datatype='integer' name='[games_starts]' role='measure' type='quantitative' />
+      <column caption='Games Subs' datatype='integer' name='[games_subs]' role='measure' type='quantitative' />
+      <column caption='Gk Clean Sheets' datatype='integer' name='[gk_clean_sheets]' role='measure' type='quantitative' />
+      <column caption='Gk Clean Sheets Pct' datatype='real' name='[gk_clean_sheets_pct]' role='measure' type='quantitative' />
+      <column caption='Gk Games' datatype='integer' hidden='true' name='[gk_games]' role='measure' type='quantitative' />
+      <column caption='Gk Games Starts' datatype='integer' hidden='true' name='[gk_games_starts]' role='measure' type='quantitative' />
+      <column caption='Gk Goals Against' datatype='integer' hidden='true' name='[gk_goals_against]' role='measure' type='quantitative' />
+      <column caption='Gk Goals Against Per90' datatype='real' hidden='true' name='[gk_goals_against_per90]' role='measure' type='quantitative' />
+      <column caption='Gk Losses' datatype='integer' hidden='true' name='[gk_losses]' role='measure' type='quantitative' />
+      <column caption='Gk Minutes' datatype='integer' hidden='true' name='[gk_minutes]' role='measure' type='quantitative' />
+      <column caption='Gk Pens Allowed' datatype='integer' hidden='true' name='[gk_pens_allowed]' role='measure' type='quantitative' />
+      <column caption='Gk Pens Att' datatype='integer' hidden='true' name='[gk_pens_att]' role='measure' type='quantitative' />
+      <column caption='Gk Pens Missed' datatype='boolean' hidden='true' name='[gk_pens_missed]' role='dimension' type='nominal' />
+      <column caption='Gk Pens Save Pct' datatype='integer' hidden='true' name='[gk_pens_save_pct]' role='measure' type='quantitative' />
+      <column caption='Gk Pens Saved' datatype='integer' hidden='true' name='[gk_pens_saved]' role='measure' type='quantitative' />
+      <column caption='Gk Save Pct' datatype='real' hidden='true' name='[gk_save_pct]' role='measure' type='quantitative' />
+      <column caption='Gk Saves' datatype='integer' hidden='true' name='[gk_saves]' role='measure' type='quantitative' />
+      <column caption='Gk Shots On Target Against' datatype='integer' hidden='true' name='[gk_shots_on_target_against]' role='measure' type='quantitative' />
+      <column caption='Gk Ties' datatype='integer' hidden='true' name='[gk_ties]' role='measure' type='quantitative' />
+      <column caption='Gk Wins' datatype='integer' hidden='true' name='[gk_wins]' role='measure' type='quantitative' />
+      <column caption='Goals' datatype='integer' hidden='true' name='[goals]' role='measure' type='quantitative' />
+      <column caption='Goals Assists' datatype='integer' hidden='true' name='[goals_assists]' role='measure' type='quantitative' />
+      <column caption='Goals Assists Pens Per90' datatype='real' hidden='true' name='[goals_assists_pens_per90]' role='measure' type='quantitative' />
+      <column caption='Goals Assists Per90' datatype='real' name='[goals_assists_per90]' role='measure' type='quantitative' />
+      <column caption='Goals Pens' datatype='integer' hidden='true' name='[goals_pens]' role='measure' type='quantitative' />
+      <column caption='Goals Pens Per90' datatype='real' hidden='true' name='[goals_pens_per90]' role='measure' type='quantitative' />
+      <column caption='Goals Per90' datatype='real' name='[goals_per90]' role='measure' type='quantitative' />
+      <column caption='Goals Per Shot' datatype='real' hidden='true' name='[goals_per_shot]' role='measure' type='quantitative' />
+      <column caption='Goals Per Shot On Target' datatype='real' hidden='true' name='[goals_per_shot_on_target]' role='measure' type='quantitative' />
+      <column caption='Interceptions' datatype='integer' name='[interceptions]' role='measure' type='quantitative' />
+      <column caption='Minutes' datatype='integer' name='[minutes]' role='measure' type='quantitative' />
+      <column caption='Minutes 90S' datatype='real' hidden='true' name='[minutes_90s]' role='measure' type='quantitative' />
+      <column caption='Minutes Pct' datatype='real' hidden='true' name='[minutes_pct]' role='measure' type='quantitative' />
+      <column caption='Minutes Per Game' datatype='integer' hidden='true' name='[minutes_per_game]' role='measure' type='quantitative' />
+      <column caption='Minutes Per Start' datatype='integer' hidden='true' name='[minutes_per_start]' role='measure' type='quantitative' />
+      <column caption='Minutes Per Sub' datatype='integer' hidden='true' name='[minutes_per_sub]' role='measure' type='quantitative' />
+      <column caption='Offsides' datatype='integer' hidden='true' name='[offsides]' role='measure' type='quantitative' />
+      <column caption='On Goals Against' datatype='integer' hidden='true' name='[on_goals_against]' role='measure' type='quantitative' />
+      <column caption='On Goals For' datatype='integer' hidden='true' name='[on_goals_for]' role='measure' type='quantitative' />
+      <column caption='Own Goals' datatype='boolean' hidden='true' name='[own_goals]' role='dimension' type='nominal' />
+      <column caption='Pens Att' datatype='integer' hidden='true' name='[pens_att]' role='measure' type='quantitative' />
+      <column caption='Pens Conceded' datatype='string' hidden='true' name='[pens_conceded]' role='dimension' type='nominal' />
+      <column caption='Pens Made' datatype='boolean' hidden='true' name='[pens_made]' role='dimension' type='nominal' />
+      <column caption='Pens Won' datatype='string' hidden='true' name='[pens_won]' role='dimension' type='nominal' />
+      <column caption='Player' datatype='string' name='[player]' role='dimension' type='nominal' />
+      <column caption='Plus Minus' datatype='integer' name='[plus_minus]' role='measure' type='quantitative' />
+      <column caption='Plus Minus Per90' datatype='real' hidden='true' name='[plus_minus_per90]' role='measure' type='quantitative' />
+      <column caption='Plus Minus Wowy' datatype='real' hidden='true' name='[plus_minus_wowy]' role='measure' type='quantitative' />
+      <column caption='Points Per Game' datatype='real' hidden='true' name='[points_per_game]' role='measure' type='quantitative' />
+      <column caption='Position' datatype='string' name='[position]' role='dimension' type='nominal' />
+      <column caption='Shots' datatype='integer' hidden='true' name='[shots]' role='measure' type='quantitative' />
+      <column caption='Shots On Target' datatype='integer' hidden='true' name='[shots_on_target]' role='measure' type='quantitative' />
+      <column caption='Shots On Target Pct' datatype='real' name='[shots_on_target_pct]' role='measure' type='quantitative' />
+      <column caption='Shots On Target Per90' datatype='real' hidden='true' name='[shots_on_target_per90]' role='measure' type='quantitative' />
+      <column caption='Shots Per90' datatype='real' name='[shots_per90]' role='measure' type='quantitative' />
+      <column caption='Tackles Won' datatype='integer' name='[tackles_won]' role='measure' type='quantitative' />
+      <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+      <column caption='Team Country' datatype='string' name='[team_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Unused Subs' datatype='integer' hidden='true' name='[unused_subs]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-hidden-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Key' />
+        <field-sort-custom-order field='Calculation_1105582565613574' />
+        <field-sort-custom-order field='player' />
+        <field-sort-custom-order field='team' />
+        <field-sort-custom-order field='team_country' />
+        <field-sort-custom-order field='position' />
+        <field-sort-custom-order field='age' />
+        <field-sort-custom-order field='birth_year' />
+        <field-sort-custom-order field='club' />
+        <field-sort-custom-order field='games' />
+        <field-sort-custom-order field='games_starts' />
+        <field-sort-custom-order field='minutes' />
+        <field-sort-custom-order field='minutes_90s' />
+        <field-sort-custom-order field='goals' />
+        <field-sort-custom-order field='assists' />
+        <field-sort-custom-order field='goals_assists' />
+        <field-sort-custom-order field='goals_pens' />
+        <field-sort-custom-order field='pens_made' />
+        <field-sort-custom-order field='pens_att' />
+        <field-sort-custom-order field='cards_yellow' />
+        <field-sort-custom-order field='Calculation_1612182794813440' />
+        <field-sort-custom-order field='Goal Score (copy)_1612182794977281' />
+        <field-sort-custom-order field='cards_red' />
+        <field-sort-custom-order field='goals_per90' />
+        <field-sort-custom-order field='assists_per90' />
+        <field-sort-custom-order field='Calculation_1612182797971461' />
+        <field-sort-custom-order field='goals_assists_per90' />
+        <field-sort-custom-order field='goals_pens_per90' />
+        <field-sort-custom-order field='goals_assists_pens_per90' />
+        <field-sort-custom-order field='Calculation_1105582547660801' />
+        <field-sort-custom-order field='shots' />
+        <field-sort-custom-order field='shots_on_target' />
+        <field-sort-custom-order field='shots_on_target_pct' />
+        <field-sort-custom-order field='Calculation_1612182798061574' />
+        <field-sort-custom-order field='Calculation_1612182798221320' />
+        <field-sort-custom-order field='shots_per90' />
+        <field-sort-custom-order field='Calculation_1612182798147591' />
+        <field-sort-custom-order field='shots_on_target_per90' />
+        <field-sort-custom-order field='goals_per_shot' />
+        <field-sort-custom-order field='goals_per_shot_on_target' />
+        <field-sort-custom-order field='minutes_per_game' />
+        <field-sort-custom-order field='minutes_pct' />
+        <field-sort-custom-order field='minutes_per_start' />
+        <field-sort-custom-order field='games_complete' />
+        <field-sort-custom-order field='games_subs' />
+        <field-sort-custom-order field='minutes_per_sub' />
+        <field-sort-custom-order field='unused_subs' />
+        <field-sort-custom-order field='points_per_game' />
+        <field-sort-custom-order field='Calculation_1105582543712256' />
+        <field-sort-custom-order field='Calculation_1105582548582402' />
+        <field-sort-custom-order field='on_goals_for' />
+        <field-sort-custom-order field='on_goals_against' />
+        <field-sort-custom-order field='plus_minus' />
+        <field-sort-custom-order field='plus_minus_per90' />
+        <field-sort-custom-order field='plus_minus_wowy' />
+        <field-sort-custom-order field='Calculation_1612182795382787' />
+        <field-sort-custom-order field='cards_yellow_red' />
+        <field-sort-custom-order field='fouls' />
+        <field-sort-custom-order field='fouled' />
+        <field-sort-custom-order field='offsides' />
+        <field-sort-custom-order field='Calculation_1612182795481092' />
+        <field-sort-custom-order field='crosses' />
+        <field-sort-custom-order field='interceptions' />
+        <field-sort-custom-order field='tackles_won' />
+        <field-sort-custom-order field='pens_won' />
+        <field-sort-custom-order field='pens_conceded' />
+        <field-sort-custom-order field='own_goals' />
+        <field-sort-custom-order field='gk_games' />
+        <field-sort-custom-order field='Calculation_1612182795202562' />
+        <field-sort-custom-order field='gk_games_starts' />
+        <field-sort-custom-order field='gk_minutes' />
+        <field-sort-custom-order field='gk_goals_against' />
+        <field-sort-custom-order field='gk_goals_against_per90' />
+        <field-sort-custom-order field='gk_shots_on_target_against' />
+        <field-sort-custom-order field='gk_saves' />
+        <field-sort-custom-order field='gk_save_pct' />
+        <field-sort-custom-order field='gk_wins' />
+        <field-sort-custom-order field='gk_ties' />
+        <field-sort-custom-order field='gk_losses' />
+        <field-sort-custom-order field='gk_clean_sheets' />
+        <field-sort-custom-order field='gk_clean_sheets_pct' />
+        <field-sort-custom-order field='gk_pens_att' />
+        <field-sort-custom-order field='gk_pens_allowed' />
+        <field-sort-custom-order field='gk_pens_saved' />
+        <field-sort-custom-order field='Calculation_1105582549991427' />
+        <field-sort-custom-order field='gk_pens_missed' />
+        <field-sort-custom-order field='gk_pens_save_pct' />
+        <field-sort-custom-order field='Calculation_1769962086752257' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='WCPlayersData' id='WCPlayersData_CEBAECFCF81B479F96A2B7CC0FBD75A8'>
+            <properties context=''>
+              <relation connection='sqlserver.13zekqs1d0mb04176wqrz0kui21p' name='WCPlayersData' table='[dbo].[WCPlayersData]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WCPlayersData (InternLab)' name='federated.19jufo710k7y0q1dkwzcj027c22e' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.19jufo710k7y0q1dkwzcj027c22e'>
+            <column-instance column='[team_country]' derivation='None' name='[none:team_country:nk]' pivot='key' type='nominal' />
+            <column caption='Team Country' datatype='string' name='[team_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.19jufo710k7y0q1dkwzcj027c22e].[Longitude (generated)]' field-type='quantitative' max='11168197.377727024' min='-27843883.794948645' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.19jufo710k7y0q1dkwzcj027c22e].[Latitude (generated)]' field-type='quantitative' max='13020387.691562612' min='-6728679.4285982978' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.19jufo710k7y0q1dkwzcj027c22e].[none:team_country:nk]' />
+              <geometry column='[federated.19jufo710k7y0q1dkwzcj027c22e].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2.2430939674377441' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19jufo710k7y0q1dkwzcj027c22e].[Latitude (generated)]</rows>
+        <cols>[federated.19jufo710k7y0q1dkwzcj027c22e].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{B132932A-1AA4-46CE-8AD5-163C61EEE886}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WCPlayersData (InternLab)' name='federated.19jufo710k7y0q1dkwzcj027c22e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19jufo710k7y0q1dkwzcj027c22e'>
+            <column caption='Tackles+Interception' datatype='integer' name='[Calculation_1105582565613574]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[tackles_won]+[interceptions]' />
+            </column>
+            <column caption='PositionSplit' datatype='string' name='[Calculation_1769962086752257]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF CONTAINS([position], &quot;,&quot;) THEN&#13;&#10;    SPLIT([position], &quot;,&quot;, 1)&#13;&#10;ELSE&#13;&#10;    [position]&#13;&#10;END' />
+            </column>
+            <column caption='Goals Assists Per90' datatype='real' name='[goals_assists_per90]' role='measure' type='quantitative' />
+            <column caption='Interceptions' datatype='integer' name='[interceptions]' role='measure' type='quantitative' />
+            <column caption='Minutes' datatype='integer' name='[minutes]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1769962086752257]' derivation='None' name='[none:Calculation_1769962086752257:nk]' pivot='key' type='nominal' />
+            <column-instance column='[player]' derivation='None' name='[none:player:nk]' pivot='key' type='nominal' />
+            <column-instance column='[team]' derivation='None' name='[none:team:nk]' pivot='key' type='nominal' />
+            <column caption='Player' datatype='string' name='[player]' role='dimension' type='nominal' />
+            <column caption='Position' datatype='string' name='[position]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1105582565613574]' derivation='Sum' name='[sum:Calculation_1105582565613574:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[goals_assists_per90]' derivation='Sum' name='[sum:goals_assists_per90:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[minutes]' derivation='Sum' name='[sum:minutes:qk]' pivot='key' type='quantitative' />
+            <column caption='Tackles Won' datatype='integer' name='[tackles_won]' role='measure' type='quantitative' />
+            <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19jufo710k7y0q1dkwzcj027c22e].[none:Calculation_1769962086752257:nk]'>
+            <groupfilter function='member' level='[none:Calculation_1769962086752257:nk]' member='&quot;FW&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.19jufo710k7y0q1dkwzcj027c22e].[none:team:nk]'>
+            <groupfilter function='member' level='[none:team:nk]' member='&quot;Argentina&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.19jufo710k7y0q1dkwzcj027c22e].[none:Calculation_1769962086752257:nk]</column>
+            <column>[federated.19jufo710k7y0q1dkwzcj027c22e].[none:team:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.19jufo710k7y0q1dkwzcj027c22e].[none:player:nk]' />
+              <text column='[federated.19jufo710k7y0q1dkwzcj027c22e].[sum:minutes:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.19jufo710k7y0q1dkwzcj027c22e].[sum:Calculation_1105582565613574:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-pane' value-column='[federated.19jufo710k7y0q1dkwzcj027c22e].[sum:Calculation_1105582565613574:qk]' z-order='1' />
+            <reference-line axis-column='[federated.19jufo710k7y0q1dkwzcj027c22e].[sum:goals_assists_per90:qk]' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-pane' value-column='[federated.19jufo710k7y0q1dkwzcj027c22e].[sum:goals_assists_per90:qk]' z-order='2' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19jufo710k7y0q1dkwzcj027c22e].[sum:goals_assists_per90:qk]</rows>
+        <cols>[federated.19jufo710k7y0q1dkwzcj027c22e].[sum:Calculation_1105582565613574:qk]</cols>
+      </table>
+      <simple-id uuid='{C41DB3E2-643A-498B-B4D5-33ED4E8F1A9E}' />
+    </worksheet>
+    <worksheet name='Sheet 6 (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WCPlayersData (InternLab)' name='federated.19jufo710k7y0q1dkwzcj027c22e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19jufo710k7y0q1dkwzcj027c22e'>
+            <column caption='FW Rating' datatype='real' name='[Calculation_1612182795481092]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='0.40 * [goals_per90]&#13;&#10;+&#13;&#10;0.30 * [assists_per90]&#13;&#10;+&#13;&#10;0.20 * [shots_on_target_pct]&#13;&#10;+&#13;&#10;0.10 * [plus_minus]' />
+            </column>
+            <column caption='Goals Score' datatype='real' name='[Calculation_1612182797971461]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[goals_per90] * 40' />
+            </column>
+            <column caption='Assists Score' datatype='real' name='[Calculation_1612182798061574]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[assists_per90] * 30' />
+            </column>
+            <column caption='Accuracy Score' datatype='real' name='[Calculation_1612182798147591]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='([shots_on_target_pct] / 100) * 20' />
+            </column>
+            <column caption='TeamEffect Score' datatype='real' name='[Calculation_1612182798221320]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[plus_minus_per90] * 10' />
+            </column>
+            <column caption='FW Score' datatype='real' name='[Calculation_1612182798319625]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_1612182797971461]&#13;&#10;+&#13;&#10;[Calculation_1612182798061574]&#13;&#10;+&#13;&#10;[Calculation_1612182798147591]&#13;&#10;+&#13;&#10;[Calculation_1612182798221320]' />
+            </column>
+            <column caption='PositionSplit' datatype='string' name='[Calculation_1769962086752257]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF CONTAINS([position], &quot;,&quot;) THEN&#13;&#10;    SPLIT([position], &quot;,&quot;, 1)&#13;&#10;ELSE&#13;&#10;    [position]&#13;&#10;END' />
+            </column>
+            <column caption='Assists Per90' datatype='real' name='[assists_per90]' role='measure' type='quantitative' />
+            <column caption='Goals Per90' datatype='real' name='[goals_per90]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1769962086752257]' derivation='None' name='[none:Calculation_1769962086752257:nk]' pivot='key' type='nominal' />
+            <column-instance column='[player]' derivation='None' name='[none:player:nk]' pivot='key' type='nominal' />
+            <column-instance column='[team]' derivation='None' name='[none:team:nk]' pivot='key' type='nominal' />
+            <column caption='Player' datatype='string' name='[player]' role='dimension' type='nominal' />
+            <column caption='Plus Minus' datatype='integer' name='[plus_minus]' role='measure' type='quantitative' />
+            <column caption='Plus Minus Per90' datatype='real' hidden='true' name='[plus_minus_per90]' role='measure' type='quantitative' />
+            <column caption='Position' datatype='string' name='[position]' role='dimension' type='nominal' />
+            <column caption='Shots On Target Pct' datatype='real' name='[shots_on_target_pct]' role='measure' type='quantitative' />
+            <column caption='Shots Per90' datatype='real' name='[shots_per90]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1612182795481092]' derivation='Sum' name='[sum:Calculation_1612182795481092:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1612182798319625]' derivation='Sum' name='[sum:Calculation_1612182798319625:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[goals_per90]' derivation='Sum' name='[sum:goals_per90:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[shots_per90]' derivation='Sum' name='[sum:shots_per90:qk]' pivot='key' type='quantitative' />
+            <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19jufo710k7y0q1dkwzcj027c22e].[none:Calculation_1769962086752257:nk]'>
+            <groupfilter function='member' level='[none:Calculation_1769962086752257:nk]' member='&quot;FW&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.19jufo710k7y0q1dkwzcj027c22e].[none:team:nk]'>
+            <groupfilter function='member' level='[none:team:nk]' member='&quot;Argentina&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.19jufo710k7y0q1dkwzcj027c22e].[none:Calculation_1769962086752257:nk]</column>
+            <column>[federated.19jufo710k7y0q1dkwzcj027c22e].[none:team:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.19jufo710k7y0q1dkwzcj027c22e].[none:player:nk]' />
+              <text column='[federated.19jufo710k7y0q1dkwzcj027c22e].[sum:Calculation_1612182795481092:qk]' />
+              <text column='[federated.19jufo710k7y0q1dkwzcj027c22e].[sum:Calculation_1612182798319625:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19jufo710k7y0q1dkwzcj027c22e].[sum:shots_per90:qk]</rows>
+        <cols>[federated.19jufo710k7y0q1dkwzcj027c22e].[sum:goals_per90:qk]</cols>
+      </table>
+      <simple-id uuid='{CD13C3BB-2418-4C71-B368-FEC76171BFF5}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19jufo710k7y0q1dkwzcj027c22e].[none:team_country:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{D61D88DB-E64D-40C6-B50E-1974AF3E7EE4}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.19jufo710k7y0q1dkwzcj027c22e].[none:team:nk]' type='filter' />
+            <card mode='dropdown' param='[federated.19jufo710k7y0q1dkwzcj027c22e].[none:Calculation_1769962086752257:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19jufo710k7y0q1dkwzcj027c22e].[none:Calculation_1769962086752257:nk]</field>
+            <field>[federated.19jufo710k7y0q1dkwzcj027c22e].[none:player:nk]</field>
+            <field>[federated.19jufo710k7y0q1dkwzcj027c22e].[none:team:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{59BCE7F0-ECA9-4C97-8EC0-A85803F719FB}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 6 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.19jufo710k7y0q1dkwzcj027c22e].[none:Calculation_1769962086752257:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19jufo710k7y0q1dkwzcj027c22e].[none:Calculation_1769962086752257:nk]</field>
+            <field>[federated.19jufo710k7y0q1dkwzcj027c22e].[none:player:nk]</field>
+            <field>[federated.19jufo710k7y0q1dkwzcj027c22e].[none:team:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{28CC3943-B0BD-45DB-98BC-7A57C758672F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 6' width='192'>
+      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
+      HIR1A1CzKQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 6 (2)' width='192'>
+      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
+      WRmOhDEGAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
